@@ -1854,7 +1854,7 @@ body.is-preload #footer {
 .mySlides {
     display: none;
     border-radius: 4px;
-    background-color: brown;
+    background-color: rgba(165, 42, 42, 0);
     height: 100%;
     width: 100%;
     margin: 0 auto;
@@ -1869,6 +1869,31 @@ body.is-preload #footer {
     height: 100%;
     min-height: fit-content;
     max-height: fit-content;
+}
+
+.mySlides.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Add a pointer when hovering over the thumbnail images */
