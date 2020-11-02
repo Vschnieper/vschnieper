@@ -252,7 +252,7 @@
         $('<div class="close">Close</div>')
             .appendTo($this)
             .on("click", function () {
-                location.hash = "";
+                location.hash = "#";
             });
 
         // Prevent clicks from inside article from bubbling.
@@ -327,7 +327,7 @@
     $main_articles.hide();
 
     // Initial article.
-    if (location.hash != "" && location.hash != "#")
+    if (location.hash != "" && location.hash != "")
         $window.on("load", function () {
             $main._show(location.hash.substr(1), true);
         });
