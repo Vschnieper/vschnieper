@@ -2079,8 +2079,11 @@ body.is-preload #footer {
     transition: all 0.2s;
 }
 
+.active {
+    opacity: 1;
+}
+
 @media (hover: hover) {
-    .active,
     .demo:hover {
         opacity: 1;
     }
